@@ -11,15 +11,15 @@
 # output=python_test(5) #functioncall
 # print(output)
 
-# def python_test(a,b):
-#     #docstrings """
+def python_test(a,b):
+    #docstrings """
     
-#     print(a)
-#     print(b)
-#     sum=a+b
-#     return sum
-# output=python_test(3,5)
-# print(output)
+    print(a)
+    print(b)
+    sum=a+b
+    return sum
+output=python_test(3,5)
+print(output)
 
 
 
