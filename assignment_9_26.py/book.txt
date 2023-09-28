@@ -1,4 +1,4 @@
-Human Psychology: John : Psychological Fiction : 2018
-Anthropology: Anusha : Creative Non Fiction : 2007
-Gone Girl : Micheal : Thriller : 2018
-Science Mystery: Dor Bahadur Shrestha : Science Fiction : 2007
+Psychology: John : Psychological Fiction : 2018
+Anthropology: Somnath : Creative Non Fiction : 2007
+GoneGirl : Micheal : Thriller : 2018
+ScienceMystery: MK: Science Fiction : 2007

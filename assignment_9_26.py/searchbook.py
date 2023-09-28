@@ -1,32 +1,39 @@
-author_name=input("Enter the author's name: ")
+
 
 def search_books(author_name):
     try:
+        found_books=[]
         with open("book.txt", "r") as file:
-            found_books=[]
-            
             for line in file:
-                lines=line.strip().split(":")
-                if len(lines)>=2 and lines.strip()==author_name:
-                    found_books.append(lines)
-            
-            if not found_books:
-                print("No books found by the required author name: ", author_name)
-            else:
-                print("Books found by the required author name: ", author_name, ": ")
+               title, author, genre, year  = line.strip().split(':')
+               if author == author_name:
+                    # found_books.append(title,author,genre,year)
+                     found_books.append(title)
+                     found_books.append(author)
+                     found_books.append(genre)
+                     found_books.append(year)
+                    
+            if found_books:
+                print("Books found by the  author : ", author_name, ": ")
                 
                 for book in found_books:
-                    print("Title: ", book[0].strip())
-                    print("Author: ", book[1].strip())
-                    print("Genre: ", book[2].strip())
-                    print("Year: ", book[3].strip())
+                    print(f"title:{book} ")
+                    print(f"author:{book} ")
+                    print(f"genre:{book} ")
+                    print(f"year:{book} ")
+                    # print("Title: ", book[0].strip())
+                    # print("Author: ", book[1].strip())
+                    # print("Genre: ", book[2].strip())
+                    # print("Year: ", book[3].strip())
+            else:
+                print("no books found by the author", author_name)
                     
     except FileNotFoundError:
         print("book.txt file not found.")
         
         
-        
-search_books(author_name)
+author_name=input("Enter the author's name: ")       
+search_books(author_name.lower())
     
             
             
