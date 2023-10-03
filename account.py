@@ -13,6 +13,7 @@ class SavingsAccount(Account):
     def __int__(self,account_number,holder_name,balance,interest_rate):
         Account.__init__(account_number,holder_name,balance)
         self.interest_rate=interest_rate
+        self.balance=balance
 
     def calc_interest(self):
         return self.balance*(self.interest_rate/100)

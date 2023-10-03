@@ -1,7 +1,7 @@
 from Bank.account import SavingsAccount,CheckingAccount
 from Bank.transaction import deposit,withdraw
 
-savings_account=SavingsAccount("NIBIL","Anusha",1000)
+savings_account=SavingsAccount("NIBIL","Anusha",1000,2.5)
 checking_account=CheckingAccount("CA678","Bipana",10000,5.1)
 
 savings_account.display_info()
